@@ -71,6 +71,8 @@ The code is tested on Ubuntu 16.04 (64bit) with MATLAB (2016a).
 >> demo_posetrack
 ```
 
+One video for demo purposes is already provided. However, if you want to run the code over all videos, please download [Multi-Person PoseTrack dataset](http://pages.iai.uni-bonn.de/iqbal_umar/PoseTrack/data/MultiPerson_PoseTrack_v0.1.rar) and place the videos under 'data/bonn-multiperson-posetrack/'.
+
 ## Citing
 ```
 @inproceedings{iqbal2016PoseTrack,
