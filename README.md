@@ -1,7 +1,6 @@
 PoseTrack: Joint Multi-Person Pose Estimation and Tracking
 ========================
  
-# Introduction
 The repo provides the source code for our CVPR'17 [paper](https://arxiv.org/abs/1611.07727) for joint mult-person pose estimation and tracking. 
 
 <p align="left">
