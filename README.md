@@ -33,19 +33,19 @@ The code is tested on Ubuntu 16.04 (64bit) with MATLAB (2016a).
    ```
 
 2. Build and download dependencies of [DeeperCut](https://github.com/eldar/deepcut)
-..1. Build Caffe and its MATLAB interface after configuring Makefile.config
+⋅⋅1. Build Caffe and its MATLAB interface after configuring Makefile.config
    ```
    $ cd deepcut/external/caffe
    $ make -j 12 all matcaffe
    ```
 
-..2. Build `liblinear`, specify the path to the MATLAB installation	
+⋅⋅2. Build `liblinear`, specify the path to the MATLAB installation	
    ```
    $ cd deepcut/external/liblinear-1.94/matlab
    $ CC=gcc CXX=g++ MATLABDIR=PATH_TO_MATLAB make
    ```
 
-..3. Download models
+⋅⋅3. Download models
    ```
    $ cd deepcut/data
    $ ./download_models.sh
