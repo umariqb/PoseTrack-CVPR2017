@@ -1,7 +1,6 @@
 PoseTrack: Joint Multi-Person Pose Estimation and Tracking
 ========================
  
-# Introduction
 The repo provides the source code for our CVPR'17 [paper](https://arxiv.org/abs/1611.07727) for joint mult-person pose estimation and tracking. 
 
 <p align="left">
@@ -33,24 +32,23 @@ The code is tested on Ubuntu 16.04 (64bit) with MATLAB (2016a).
    ```
 
 2. Build and download dependencies of [DeeperCut](https://github.com/eldar/deepcut)
-⋅⋅1. Build Caffe and its MATLAB interface after configuring Makefile.config
-   ```
-   $ cd deepcut/external/caffe
-   $ make -j 12 all matcaffe
-   ```
+   1. Build Caffe and its MATLAB interface after configuring Makefile.config
+	   ```
+	   $ cd deepcut/external/caffe
+	   $ make -j 12 all matcaffe
+	   ```
+   2. Build `liblinear`, specify the path to the MATLAB installation	
+	   ```
+	   $ cd deepcut/external/liblinear-1.94/matlab
+	   $ CC=gcc CXX=g++ MATLABDIR=PATH_TO_MATLAB make
+	   ```
 
-⋅⋅2. Build `liblinear`, specify the path to the MATLAB installation	
-   ```
-   $ cd deepcut/external/liblinear-1.94/matlab
-   $ CC=gcc CXX=g++ MATLABDIR=PATH_TO_MATLAB make
-   ```
-
-⋅⋅3. Download models
-   ```
-   $ cd deepcut/data
-   $ ./download_models.sh
-   ```
-
+   3. Download models
+	   ```
+	   $ cd deepcut/data
+	   $ ./download_models.sh
+	   ```
+	   
 3. Build PoseTrack solver	
    ```
    $ cd external/solver
@@ -58,14 +56,13 @@ The code is tested on Ubuntu 16.04 (64bit) with MATLAB (2016a).
    $ make solver-callback
    ```
 
-4. Obtain Gurobi license from http://www.gurobi.com/downloads/licenses/license-center
-   and place the license at desired location and modify the p.gurobi_license_file in posetrack/lib/pt_exp_params.m to point to the license file location.  
+4. Obtain Gurobi [license](http://www.gurobi.com/downloads/licenses/license-center) and place the license at desired location and modify the p.gurobi_license_file in posetrack/lib/pt_exp_params.m to point to the license file location.
 
 5. Download PoseTrack models
-```
-$ cd data
-$ ./download_models.sh
-```
+	```
+	$ cd data
+	$ ./download_models.sh
+	```
 
 ## Run Demo	
 ```
