@@ -66,7 +66,7 @@ The code is tested on Ubuntu 16.04 (64bit) with MATLAB (2016a).
 
 ## Run Demo	
 ```
-% in MATLAB
+% start matlab
 >> startup
 >> demo_posetrack
 ```
