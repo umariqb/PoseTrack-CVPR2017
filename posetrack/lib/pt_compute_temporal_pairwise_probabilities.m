@@ -71,8 +71,8 @@ for f = 1:num_frames
         r  = ps/2;
         x1 = locations(:,1) - r;
         y1 = locations(:,2) - r ;
-        x2 = x1 + r;
-        y2 = y1 + r; 
+        x2 = x1 + ps;
+        y2 = y1 + ps; 
         bbox = cat(2, x1,y1,x2,y2);
     else
         bbox = locations;
