@@ -178,7 +178,7 @@ for vIdx = firstidx:lastidx
     else
         [pathstr,~,~] = fileparts(detFname);
         mkdir_if_missing(pathstr);
-        for fIdx = 1:50 %num_frames
+        for fIdx = 1:num_frames
             fprintf('Frame: %d/%d\n',fIdx, num_frames);
             fr_fn = fullfile(vid_dir, fn(fIdx).name);
             [~,fr_name,~] = fileparts(fr_fn);        
