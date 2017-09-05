@@ -2,7 +2,7 @@ function [ joints, visFlags ] = pt_get_anno_joints_with_occ( annopoints, pidxs, 
 
 num_joints = length(pidxs);
 joints = NaN(num_joints, 2);
-visFlags = NaN(num_joints,1);
+visFlags = zeros(num_joints,1);
 
 if(~isfield(annopoints, 'point'))
     return;
