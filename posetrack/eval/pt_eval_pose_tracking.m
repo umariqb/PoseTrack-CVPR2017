@@ -5,8 +5,8 @@ fprintf('pt_eval_pose_tracking()\n');
 if(nargin < 2)
     fprintf('Using default options.\n');
     options.td = 0.2;
-    options.minTrackLen = 5;
-    options.minAvgJoints = 3;
+    options.minTrackLen = 6;
+    options.minAvgJoints = 5;
 end
 
 if(nargin < 3)
