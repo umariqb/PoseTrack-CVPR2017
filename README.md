@@ -51,9 +51,9 @@ The code is tested on Ubuntu 16.04 (64bit) with MATLAB (2016a).
 	   
 3. Build PoseTrack solver	
    ```
-   $ cd external/solver
+   $ cd posetrack/solver
    $ cmake . -DGUROBI_ROOT_DIR=/path/to/gurobi605/linux64 -DGUROBI_VERSION=60
-   $ make solver-callback
+   $ make pt-solver-callback
    ```
 
 4. Obtain Gurobi [license](http://www.gurobi.com/downloads/licenses/license-center) and place the license at desired location and modify the p.gurobi_license_file in posetrack/lib/pt_exp_params.m to point to the license file location.
